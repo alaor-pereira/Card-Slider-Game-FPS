@@ -1,0 +1,247 @@
+/*=============== FONTES ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@font-face {
+	font-family: Rainbow;
+	src: url(../fonts/Rainbow.ttf);
+}
+@font-face {
+	font-family: GreatSejagad;
+	src: url(../fonts/Great_Sejagad.ttf);
+}
+
+/*=============== CONFIGS GERAIS DA PÁGINA ===============*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*=============== BACKGROUND DA PÁGINA ===============*/
+.background-bio{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*=============== CONFIGS GERAIS DA SEÇÃO ===============*/
+.container {
+	width: 1400px;
+	height: 100%;
+	margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.bioAgent-game{
+    flex: 1 0 auto;
+    width: 100%;
+    position: relative;
+}
+/*=============== LOGO e TÍTULO ===============*/
+.game-logo {
+    width: 170px;
+    padding: 0px;
+    margin: 0;
+}
+.agent-title {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+	margin: 30px 0px 50px 0px;
+}
+.title-attack, .title-defense{
+	text-align: center;
+	color: #FF2424;
+	font-size: 40px;
+	font-family: GreatSejagad;
+    position: relative;
+    margin-left: 15px;
+    text-shadow: 1.5px 1.5px 1px #000;
+}
+.title-defense {
+	color: #2499FF;
+}
+.main_title {
+    color: #fff;
+    font-size: 90px;
+    font-family: Rainbow;
+    font-style: italic;
+	line-height: 55px;
+    text-shadow: 1.5px 1.5px 1px #000;
+}
+
+/*=============== BIO DO AGENTE (NOME, HISTORIA e IMAGEM) ===============*/
+.agent-attack, .agent-defense {
+	display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slideimg-atk, .slideimg-dfs {
+    width: 350px;
+    height: 100%;
+    border: solid 1.5px #961414;
+    background-color: hsla(0,0%,100%,.15);
+}
+.slideimg-dfs{
+    border: solid 1.5px #0e3e69;
+}
+.agent-name-atk, .agent-name-dfs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: GreatSejagad;
+    color: #c3c3c3;
+    font-weight: 400;
+    font-size: 45px;
+    padding: 5px;
+    background-color: #961414;
+}
+.agent-name-dfs{
+    background-color: #0e3e69;
+}
+.history-agent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: hsla(0, 0%, 100%, 0.562);
+}
+
+
+/*=============== BOTÃO AGENTE ===============*/
+.btns {
+    text-align: center;
+    margin-top: 30px;
+}
+.btns button, .button-defense {
+    height: 50px;
+    width: 150px;
+    font-size: 35px;
+    padding: 8px;
+    cursor: pointer;
+    background: #961414;
+    font-family: Rainbow;
+    border: solid 1px #c3c3c3;
+    border-radius: 5px;
+    color: #fff;
+}
+.btns .button-defense {
+    background: #0e3e69;
+}
+.btns button:hover {
+    background: #ff2424;
+    font-style: italic;
+}
+.btns .button-defense:hover {
+    background: #2499FF;
+    font-style: italic;
+}
+
+/*=============== FOOTER ===============*/
+.footer-bio, .footer-bio-dfs{
+    flex-shrink: 0;
+    top: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: #2c0000;
+    color: #c3c3c3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 0.3rem;
+}
+.footer-bio-dfs{
+    background-color: #0e3e69;
+}
+
+/*=============== RESPONSIVE MEDIA QUERY ===============*/
+@media (max-width: 1400px){
+	.container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 760px){
+    .slideimg-atk, .slideimg-dfs {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 100%;
+    }
+	.agent-name-atk, .agent-name-dfs {
+        font-size: 30px;
+    }
+    .agent-attack, .agent-defense{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 540px) {
+    .agent-title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .slideimg-atk, .slideimg-dfs {
+        width: 200px;
+        height: 100%;
+    }
+    .agent-name-atk, .agent-name-dfs {
+        font-size: 30px;
+    }
+    .history-agent {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    .slideimg-atk, .slideimg-dfs {
+        width: 150px;
+        height: 100%;
+    }
+    .history-agent {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 370px) {
+    .game-logo{
+        width: 110px;
+    }
+    .title-attack, .title-defense{
+        font-size: 30px;
+    }
+    .main_title{
+        font-size: 70px;
+    }
+    .btns button, .button-defense{
+        height: 40px;
+        width: 110px;
+        font-size: 30px;
+        margin-left: 0;
+        padding: 6px;
+    }
+    .history-agent {
+        font-size: 12px;
+    }
+}

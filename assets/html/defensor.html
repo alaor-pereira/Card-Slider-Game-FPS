@@ -5,90 +5,119 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Card Slider Game FPS</title>
 	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/agents.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
-<body class="bg">
+<body class="bg-dfs">
 
 <!--=============== SLIDER SECTION ===============-->
 	<section class="slider-game">
+		<div class="background-defense">
+			<video class="bg-video" src="../images/BGdfs.mp4" autoplay loop muted></video>
+		</div>
 		<div class="container">
 			<div class="slider" data-slider>
 
 <!--=============== TÍTULO DO SLIDER ===============-->
 				<div class="slider-title">
-					<img src="../images/logo.png" class="game-logo" alt="logo">
+					<a href="../../index.html">
+						<img src="../images/logo.png" class="game-logo" alt="logo">
+					</a>
 					<div>
 						<p class="title-defense">Agent Cards</p>
 						<p class="main_title">Defensores</p>
 					</div>
+					<!--=============== BOTÃO ATACANTES ===============-->
+				    <div class="btns">
+					    <a href="./attack.html">
+						    <button class="button-defense">ATACANTES</button>
+					    </a>	
+				    </div>
 				</div>
+				
 
 <!--=============== CARDS ===============-->
 				<ul class="slider__cards" data-slider-cards>
+					
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs1.png" class="slideimg"/>
-							<div class="card_content">
-								<p>Isadora "Phoenix"</p>
+						<a href="../html/Bio de personagens/9.html" >
+							<div class="card-defense">
+								<img src="../images/defesa/dfs1.png" class="slideimg"/>
+								<div class="card_content">
+									<p>Isadora "Phoenix"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs2.png" class="slideimg" />
-							<div class="card_content">
-								<p>Cole "Cobra"</p>
+						<a href="../html/Bio de personagens/10.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs2.png" class="slideimg" />
+								<div class="card_content">
+									<p>Cole "Cobra"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs3.png" class="slideimg" />
-							<div class="card_content">
-								<p>Maya "Wraith"</p>
+						<a href="../html/Bio de personagens/11.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs3.png" class="slideimg" />
+								<div class="card_content">
+									<p>Maya "Wraith"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs4.png" class="slideimg" />
-							<div class="card_content">
-								<p>Jackson "Jaguar"</p>
+						<a href="../html/Bio de personagens/12.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs4.png" class="slideimg" />
+								<div class="card_content">
+									<p>Jackson "Toxicant"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs5.png" class="slideimg" />
-							<div class="card_content">
-								<p>Freya "Tempest"</p>
+						<a href="../html/Bio de personagens/13.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs5.png" class="slideimg" />
+								<div class="card_content">
+									<p>Freya "Tempest"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs6.png" class="slideimg" />
-							<div class="card_content">
-								<p>Axel "Blaze"</p>
+						<a href="../html/Bio de personagens/14.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs6.png" class="slideimg" />
+								<div class="card_content">
+									<p>Axel "Diver"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs7.png" class="slideimg" />
-							<div class="card_content">
-								<p>Luna "Ghost"</p>
+						<a href="../html/Bio de personagens/15.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs7.png" class="slideimg" />
+								<div class="card_content">
+									<p>Luna "Ghost"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="card-defense">
-							<img src="../images/defesa/dfs8.png" class="slideimg" />
-							<div class="card_content">
-								<p>Drake "Rogue"</p>
+						<a href="../html/Bio de personagens/16.html">
+							<div class="card-defense">
+								<img src="../images/defesa/dfs8.png" class="slideimg" />
+								<div class="card_content">
+									<p>Drake "Rogue"</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 
@@ -100,18 +129,13 @@
 					<button class="slider__arrow-defense" data-slider-next>
 						<i class="fa fa-angle-right"></i>
 					</button>
-				</div>
-
-<!--=============== BOTÃO ATACANTES ===============-->
-				<div class="btns">
-					<a href="../../index.html">
-						<button class="button-defense">ATACANTES</button>
-					</a>	
-				</div>
-					
+				</div>					
 			</div>
 		</div>
 	</section>
+	<footer class="footer-dfs">
+		<p>&#169; Desenvolvido por Alaor pereira.</p>
+	</footer>
 
 <script src="../js/script.js"></script>
 	
